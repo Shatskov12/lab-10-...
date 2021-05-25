@@ -20,8 +20,8 @@ class ThreadPool {
   auto enqueue(F&& f, Args&&... args)
   -> std::future<typename std::result_of<F(Args...)>::type>;
   ~ThreadPool();
- private:
 
+ private:
   std::vector< std::thread > workers;
 
   std::queue< std::function<void()> > tasks;
