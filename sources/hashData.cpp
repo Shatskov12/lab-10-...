@@ -1,6 +1,4 @@
-//
-// Created by юрий on 25.05.2021.
-//
+// Copyright 2020 Your Name <your_email>
 
 #include "hashData.hpp"
 

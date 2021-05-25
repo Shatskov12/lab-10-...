@@ -1,6 +1,6 @@
 // Copyright 2020 Your Name <your_email>
 #ifndef INCLUDE_THREADPOOL_HPP_
-#define THREAD_POOL_H
+#define INCLUDE_THREADPOOL_HPP_
 
 #include <vector>
 #include <queue>
@@ -21,18 +21,18 @@ class ThreadPool {
   -> std::future<typename std::result_of<F(Args...)>::type>;
   ~ThreadPool();
  private:
-  // need to keep track of threads so we can join them
+
   std::vector< std::thread > workers;
-  // the task queue
+
   std::queue< std::function<void()> > tasks;
 
-  // synchronization
+
   std::mutex queue_mutex;
   std::condition_variable condition;
   bool stop;
 };
 
-// the constructor just launches some amount of workers
+
 inline ThreadPool::ThreadPool(size_t threads)
     :   stop(false)
 {

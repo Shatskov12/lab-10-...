@@ -1,6 +1,5 @@
-//
-// Created by юрий on 25.05.2021.
-//
+// Copyright 2020 Your Name <your_email>
+
 #ifndef INCLUDE_HASHDATA_HPP_
 #define INCLUDE_HASHDATA_HPP_
 #include <boost/log/common.hpp>
@@ -14,7 +13,7 @@
 #include <boost/log/utility/setup/file.hpp>
 #include <map>
 #include <string>
-#include "ThreadPool.h"
+#include "ThreadPool.hpp"
 #include "iostream"
 #include "mutex"
 #include <picosha2.h>

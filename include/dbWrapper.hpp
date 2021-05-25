@@ -1,6 +1,5 @@
-//
-// Created by юрий on 25.05.2021.
-//
+// Copyright 2020 Your Name <your_email>
+
 #ifndef INCLUDE_DBWRAPPER_HPP_
 #define INCLUDE_DBWRAPPER_HPP_
 #include <assert.h>
@@ -17,7 +16,7 @@
 #include <vector>
 #include <map>
 #include <string>
-#include "ThreadPool.h"
+#include "ThreadPool.hpp"
 #include "hashData.hpp"
 #include "iostream"
 #include "rocksdb/db.h"

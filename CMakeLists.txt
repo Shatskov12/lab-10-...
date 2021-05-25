@@ -42,7 +42,7 @@ add_library(${PROJECT_NAME} STATIC
         sources/dbWrapper.cpp
         include/hashData.hpp
         sources/hashData.cpp
-        include/ThreadPool.h
+        include/ThreadPool.hpp
         )
 
 add_executable(demo
