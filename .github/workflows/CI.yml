@@ -26,9 +26,6 @@ jobs:
         run:  sudo apt install git &&
               git submodule update --init
 
-      - name: checks
-
-
 
   tests:
     runs-on: ubuntu-latest
